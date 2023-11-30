@@ -1,6 +1,6 @@
-import Canvas from './canvas/index'
-import Customizer from './pages/Customizer'
-import Home from './pages/Home'
+import Canvas from './canvas/index.jsx'
+import Customizer from './pages/Customizer.jsx'
+import Home from './pages/Home.jsx'
 
 function App() {
   return (
