@@ -1,10 +1,6 @@
-export default function (api) {
-  api.cache(true)
-
-  const presets = ['@babel/preset-env', '@babel/preset-react']
-  // Add any other Babel configuration options if needed
-
-  return {
-    presets,
-  }
-}
+// babel.config.js
+export const presets = ['@babel/preset-env', '@babel/preset-react']
+export const plugins = [
+  'babel-plugin-import-meta-resolver',
+  // Add other Babel plugins as needed
+]
