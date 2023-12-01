@@ -6,8 +6,14 @@ import dalleRoutes from './routes/dalle.routes.js'
 
 dotenv.config()
 
+const origin = ['https://3d-website-ai.netlify.app/', 'http://localhost:5173']
+
 const app = express()
+
 app.use(cors())
+app.set('trust proxy', 1)
+app.use(cors({ origin, credentials: true }))
+
 app.use(express.json({ limit: '50mb' }))
 
 app.use('/api/v1/dalle', dalleRoutes)
